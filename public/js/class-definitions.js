@@ -380,6 +380,13 @@ console.log(drink(IPA));
  *
  */
 
+function browseURL(browserType) {
+  if(browsers.hasOwnProperty(browserType)){
+    return browsers[browserType];
+  } else {
+    return false;
+  }
+}
 
 /* Step 25
  *
