@@ -327,6 +327,15 @@ function addNumbers(x, y) {
  *
  */
 
+function installLinux(linuxType) {
+  if(linuxFlavors.indexOf(linuxType) > -1){
+    console.log("success");
+    return true;
+  } else {
+    console.log("failure");
+    return false;
+  }
+}
 
 /* Step 23
  *
