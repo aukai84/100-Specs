@@ -474,20 +474,7 @@ function Person(name, money, age, gender) {
   };
 }
 
-// class Person {
-//   constructor(name, money, age, gender){
-//     this.name = name;
-//     this.money = money;
-//     this.age = age;
-//     this.gender = gender;
-//   }
-//   spendMoney(moneySpent){
-//     this.money -= moneySpent;
-//   }
-//   earnMoney(moneyEarned){
-//     this.money += moneyEarned;
-//   }
-// }
+
 /* Step 28
  *
  * Define a function named "purchaseLaptop" that takes
@@ -500,6 +487,13 @@ function Person(name, money, age, gender) {
  *
  */
 
+function purchaseLaptop(laptop){
+  if(laptopCosts.hasOwnProperty(laptop)){
+    return laptopCosts[laptop].toString();
+  } else {
+    return -1;
+  }
+}
 
 /* Step 29
  *
