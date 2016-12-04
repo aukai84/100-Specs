@@ -461,8 +461,33 @@ console.log(listLivingOrgClass());
  *   earnMoney
  *
  */
+function Person(name, money, age, gender) {
+  this.name = name;
+  this.money = money;
+  this.age = age;
+  this.gender = gender;
+  this.spendMoney = function(money){
+    this.money -= money;
+  };
+  this.earnMoney = function(money){
+    this.money += money;
+  };
+}
 
-
+// class Person {
+//   constructor(name, money, age, gender){
+//     this.name = name;
+//     this.money = money;
+//     this.age = age;
+//     this.gender = gender;
+//   }
+//   spendMoney(moneySpent){
+//     this.money -= moneySpent;
+//   }
+//   earnMoney(moneyEarned){
+//     this.money += moneyEarned;
+//   }
+// }
 /* Step 28
  *
  * Define a function named "purchaseLaptop" that takes
