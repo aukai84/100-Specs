@@ -123,7 +123,7 @@ var domains = {
   "slumlordhosting.com": "198.61.179.126",
   "jsonformatter.curiousconcept.com": "104.28.5.70"
 
-}
+};
 /* Step 12
  *
  * Define a literal object named "browsers"
@@ -138,6 +138,14 @@ var domains = {
  *
  */
 
+var browsers = {
+  Chromium: "google.com",
+  Safari: "apple.com",
+  Opera: "opera.com",
+  Firefox: "mozilla.org",
+  Sleipnir: "fenrir-inc.com",
+  Konqueror: "konqueror.org"
+};
 
 /* Step 13
  *
