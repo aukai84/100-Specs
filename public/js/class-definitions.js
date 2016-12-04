@@ -355,6 +355,18 @@ function installLinux(linuxType) {
  *
  */
 
+function drink(beer) {
+  if(beers.hasOwnProperty(beer)){
+    if(typeof beers[beer] === 'object'){
+      return `This ${beer} is ${beers[beer][0]} and ${beers[beer][1]} and...`;
+    } else {
+      return `This ${beer} is ${beers[beer]}.`;
+    }
+  } else {
+    return false;
+  }
+}
+console.log(drink(IPA));
 
 /* Step 24
  *
