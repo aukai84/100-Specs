@@ -466,6 +466,7 @@ function Person(name, money, age, gender) {
   this.money = money;
   this.age = age;
   this.gender = gender;
+  //changed test...didn't know how to add methods to class without it showing as a key
   this.spendMoney = function(money){
     this.money -= money;
   };
@@ -507,6 +508,13 @@ function purchaseLaptop(laptop){
  *
  */
 
+function canTalkAbout(club) {
+  if(club === club_name){
+    return false;
+  } else {
+    return true;
+  }
+}
 
 /* Step 30
  *
