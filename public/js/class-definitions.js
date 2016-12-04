@@ -430,6 +430,14 @@ console.log(listLivingOrgClass());
  *
  */
 
+ function favoritePlanet(currPlanet) {
+   if(planets.indexOf(currPlanet) > -1){
+    var randomPlanet = planets[Math.floor(Math.random()*planets.length)];
+    return `I'm from ${currPlanet}, but I wish I could go to ${randomPlanet}.`;
+   } else {
+    return `${currPlanet} is not a planet!`;
+   }
+ }
 
 /* Step 27
  *
