@@ -278,6 +278,14 @@ var scmList = [
  *
  */
 
+var beers = {
+  IPA: "Ale",
+  Lager: "Strong",
+  Heffeweisen: "German",
+  Stout: ["Thick", "Dark", "Bitter"],
+  Porter: "Bitter",
+  Ale: ["Light", "Golden"]
+};
 
 /* Step 20
  *
