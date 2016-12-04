@@ -220,7 +220,13 @@ var DNA = ["nucleatides", "guanine", "adenine", 'thymine', 'cytosine'];
  *
  */
 
-
+var laptopCosts = {
+  MacBook: 1500,
+  Alienware: 2500,
+  HP: 499,
+  Surface: 320
+};
+console.log(Object.keys(laptopCosts));
 /* Step 17
  *
  * Declare an array named "livingOrganismClassification"
