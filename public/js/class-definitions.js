@@ -398,6 +398,17 @@ function browseURL(browserType) {
  *
  */
 
+function listLivingOrgClass() {
+
+  var list = document.createElement("ul");
+
+  for (var i =0; i < livingOrganismClassification.length; i++){
+    list.appendChild(document.createElement("li")).innerHTML = livingOrganismClassification[i];
+  }
+  return list.outerHTML;
+
+}
+console.log(listLivingOrgClass());
 
 /* Step 26
  *
