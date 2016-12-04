@@ -296,6 +296,9 @@ var beers = {
  *
  */
 
+function sahara_river(argument) {
+  return "Nile River";
+}
 
 /* Step 21
  *
