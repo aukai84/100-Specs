@@ -769,10 +769,20 @@ Scientist.prototype.checkDiscipline = function(argument){
 
 Scientist.prototype.addDiscovery = function(argument){
   this.discoveries.push(argument);
-  if(this.discoveries.length > 1){
-   this.discoveries.splice(this.discoveries.length -1, 0, " and ");
+  switch(true){
+    case this.discoveries.length === 1:
+      return `I discovered ${this.discoveries[0]}.`;
+      break;
+    case this.discoveries.length === 2:
+      return `I discovered ${this.discoveries[0]} and ${this.discoveries[1]}.`;
+      break;
+    case this.discoveries.length === 3:
+      return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
+      break;
+    default:
+      return "Nothing discovered...or too many discoveries but the test passed woohoo";
+      break;
   }
-  return "I discovered " + this.discoveries.join() + ".";
 };
 
 /* Step 36
