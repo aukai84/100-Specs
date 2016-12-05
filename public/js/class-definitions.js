@@ -1,3 +1,4 @@
+
 /* Step 1
  *
  * Declare a variable named "unicorn"
@@ -366,7 +367,6 @@ function drink(beer) {
     return false;
   }
 }
-console.log(drink(IPA));
 
 /* Step 24
  *
@@ -408,8 +408,6 @@ function listLivingOrgClass() {
   return list.outerHTML;
 
 }
-console.log(listLivingOrgClass());
-
 /* Step 26
  *
  * Define a function named "favoritePlanet" that
@@ -466,15 +464,15 @@ function Person(name, money, age, gender) {
   this.money = money;
   this.age = age;
   this.gender = gender;
-  //changed test...didn't know how to add methods to class without it showing as a key
-  this.spendMoney = function(money){
-    this.money -= money;
-  };
-  this.earnMoney = function(money){
-    this.money += money;
-  };
 }
 
+Person.prototype.spendMoney = function(money){
+  this.money -= money;
+};
+
+Person.prototype.earnMoney = function(money){
+  this.money += money;
+};
 
 /* Step 28
  *
@@ -537,6 +535,12 @@ function canTalkAbout(club) {
  *
  */
 
+function Pen(color) {
+  this.color = color;
+  this.write = function(message){
+    return `${color}: ${message}`;
+  };
+}
 
 /* Step 31
  *

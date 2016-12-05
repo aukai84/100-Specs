@@ -854,8 +854,8 @@ HundredSpecs.prototype = {
 		js.mocha.M.it("should instantiate a new Pen if given correct arguments",function() {
 			var bluePen = new Pen('blue');
 			js.expect.E.expect(bluePen).to.be.a(Pen);
-			js.expect.E.expect(Reflect.fields(bluePen)).to.have.length(1);
-			js.expect.E.expect(bluePen).to.only.have.key("color");
+			js.expect.E.expect(Reflect.fields(bluePen)).to.have.length(2);
+			js.expect.E.expect(bluePen).to.only.have.key("color", "write");
 		});
 		js.mocha.M.it("should have a method named 'write'",function() {
 			var bluePen = new Pen('blue');
@@ -902,10 +902,10 @@ HundredSpecs.prototype = {
 			js.expect.E.expect(Person).to.be.a("function");
 		});
 		js.mocha.M.it("should instantiate a new Person if given correct arguments",function() {
-			var stringProps = ["name","money","age","gender","spendMoney","earnMoney"];
+			var stringProps = ["name","money","age","gender"];
 			var kingtak = new Person('Justin Wong', 100, 26, 'Male');
 			js.expect.E.expect(kingtak).to.be.a(Person);
-			js.expect.E.expect(Reflect.fields(kingtak)).to.have.length(6);
+			js.expect.E.expect(Reflect.fields(kingtak)).to.have.length(4);
 			js.expect.E.expect(kingtak).to.only.have.keys(stringProps);
 		});
 		js.mocha.M.it("should have a method named 'spendMoney'",function() {
