@@ -806,6 +806,10 @@ Scientist.prototype.addDiscovery = function(argument){
  *
  */
 
+function BankAccount(balance, owner) {
+  this.balance = balance;
+  this.owner = owner;
+}
 
 /* Step 37
  *
@@ -979,6 +983,12 @@ Scientist.prototype.addDiscovery = function(argument){
  * @param {string} gender  male or female
  */
 
+class Animal {
+  constructor(species, gender){
+    this.species = species;
+    this.gender = gender;
+  }
+}
 
 /**
  * Step 51
