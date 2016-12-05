@@ -537,10 +537,11 @@ function canTalkAbout(club) {
 
 function Pen(color) {
   this.color = color;
-  this.write = function(message){
-    return `${color}: ${message}`;
-  };
 }
+
+Pen.prototype.write = function(message){
+    return `${this.color}: ${message}`;
+  };
 
 /* Step 31
  *

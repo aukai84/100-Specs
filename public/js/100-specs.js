@@ -854,8 +854,8 @@ HundredSpecs.prototype = {
 		js.mocha.M.it("should instantiate a new Pen if given correct arguments",function() {
 			var bluePen = new Pen('blue');
 			js.expect.E.expect(bluePen).to.be.a(Pen);
-			js.expect.E.expect(Reflect.fields(bluePen)).to.have.length(2);
-			js.expect.E.expect(bluePen).to.only.have.key("color", "write");
+			js.expect.E.expect(Reflect.fields(bluePen)).to.have.length(1);
+			js.expect.E.expect(bluePen).to.only.have.key("color");
 		});
 		js.mocha.M.it("should have a method named 'write'",function() {
 			var bluePen = new Pen('blue');
