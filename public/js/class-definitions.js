@@ -1365,7 +1365,13 @@ Lightbulb.prototype.flipSwitch = function(on){
  *
  */
 
-
+Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
+  if(this.flavor === "chocolate" && dayOfTheWeek === "Monday"){
+    return true;
+  } else {
+    return false;
+  }
+};
  /* Step 90
  *
  * Declare a Meal method called containsJunkFood that returns true if
