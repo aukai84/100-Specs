@@ -1409,9 +1409,9 @@ Meal.prototype.containsJunkFood = function(){
  * and assign the values to each variable below.
  *
  */
-var warmBloodedAnimal;
-var coldBloodedAnimal;
-var notWarmOrColdAnimal;
+var warmBloodedAnimal = new Animal("Bird", "male").isWarmBlooded();
+var coldBloodedAnimal = new Animal("Fish", "both").isWarmBlooded();
+var notWarmOrColdAnimal = new Animal("Donkey", "none").isWarmBlooded();
 
 
 /* Step 92
