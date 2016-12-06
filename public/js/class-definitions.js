@@ -1429,8 +1429,8 @@ var forwardDriving = new Vehicle("Mazda", "RX-7").drive(100);
  * and assign the values to each variable below.
  *
  */
-var decagon;
-var polygon;
+var decagon = new Shape(10).getType();
+var polygon = new Shape("Over 9000").getType();
 
 
 /* Step 94
