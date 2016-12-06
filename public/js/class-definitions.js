@@ -1499,5 +1499,5 @@ var cookieMonsterBlocked = new Cookie("Not for Cookie Monster Flavor").swipedByC
  * and assign the values to each variable below.
  *
  */
-var badForYou;
-var goodForYou;
+var badForYou = new Meal(["chips", "soda", "alcohol"]).containsJunkFood();
+var goodForYou = new Meal(["great food", "vegetables", "vegan stuff", "alcohol"]).containsJunkFood();
