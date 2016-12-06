@@ -227,7 +227,7 @@ var laptopCosts = {
   HP: 499,
   Surface: 320
 };
-console.log(Object.keys(laptopCosts));
+
 /* Step 17
  *
  * Declare an array named "livingOrganismClassification"
@@ -1372,6 +1372,7 @@ Cookie.prototype.swipedByCookieMonster = function(dayOfTheWeek){
     return false;
   }
 };
+
  /* Step 90
  *
  * Declare a Meal method called containsJunkFood that returns true if
@@ -1492,6 +1493,7 @@ var porchLightsOff = new Lightbulb(false).flipSwitch("off");
 var cookieMonsterPwns = new Cookie("chocolate").swipedByCookieMonster("Monday");
 var cookieMonsterBlocked = new Cookie("Not for Cookie Monster Flavor").swipedByCookieMonster("Not Monday");
 
+var chocolate = new Cookie("chocolate");
 
  /* Step 100
  *
