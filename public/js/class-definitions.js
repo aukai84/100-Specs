@@ -1420,9 +1420,8 @@ var notWarmOrColdAnimal = new Animal("Donkey", "none").isWarmBlooded();
  * and assign the values to each variable below.
  *
  */
-var streetDriving;
-var forwardDriving;
-
+var streetDriving = new Vehicle("Toyota", "Supra").drive("Ulukanu St.");
+var forwardDriving = new Vehicle("Mazda", "RX-7").drive(100);
 
  /* Step 93
  *
