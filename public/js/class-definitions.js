@@ -1439,8 +1439,8 @@ var polygon = new Shape("Over 9000").getType();
  * and assign the values to each variable below.
  *
  */
-var openAClosedBox;
-var closeAnOpenBox;
+var openAClosedBox = new Box("coal", false).openBox();
+var closeAnOpenBox = new Box("What's in the box!", true).openBox();
 
 
  /* Step 95
