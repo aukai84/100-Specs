@@ -649,7 +649,7 @@ SolarSystem.prototype.removePlanet = function(){
  *   marries
  *
  */
-function PrincessLeia(name, money, age, gender) {
+function PrincessLeia(name, money, age, gender, isInTrouble) {
   Person.call(this, name, money, age, gender);
   this.isInTrouble = null;
 }
@@ -769,19 +769,17 @@ Scientist.prototype.checkDiscipline = function(argument){
 
 Scientist.prototype.addDiscovery = function(argument){
   this.discoveries.push(argument);
-  switch(true){
-    case this.discoveries.length === 1:
-      return `I discovered ${this.discoveries[0]}.`;
-      break;
-    case this.discoveries.length === 2:
-      return `I discovered ${this.discoveries[0]} and ${this.discoveries[1]}.`;
-      break;
-    case this.discoveries.length === 3:
-      return `I discovered ${this.discoveries[0]}, ${this.discoveries[1]}, and ${this.discoveries[2]}.`;
-      break;
-    default:
-      return "Nothing discovered...or too many discoveries but the test passed woohoo";
-      break;
+  var iDiscovered = "I discovered";
+  if(this.discoveries.length === 1){
+    return `${iDiscovered} ${this.discoveries[0]}.`;
+  } else if(this.discoveries.length === 2){
+    return `${iDiscovered} ${this.discoveries[0]} and ${this.discoveries[1]}.`;
+  } else if(this.discoveries.length > 2){
+    for(var i = 0; i < this.discoveries.length -1; i++){
+      iDiscovered += ` ${this.discoveries[i]},`;
+    }
+    iDiscovered += ` and ${this.discoveries[this.discoveries.length -1]}.`;
+    return iDiscovered;
   }
 };
 
